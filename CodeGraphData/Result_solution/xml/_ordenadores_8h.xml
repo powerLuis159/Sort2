@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_ordenadores_8h" kind="file">
+    <compoundname>Ordenadores.h</compoundname>
+    <includes local="no">vector</includes>
+    <includedby refid="_ordenadores_8cpp" local="yes">C:/Users/LRona/source/repos/Sort2/Ordenadores.cpp</includedby>
+    <includedby refid="_sort2_8cpp" local="yes">C:/Users/LRona/source/repos/Sort2/Sort2.cpp</includedby>
+    <incdepgraph>
+      <node id="68">
+        <label>vector</label>
+      </node>
+      <node id="67">
+        <label>C:/Users/LRona/source/repos/Sort2/Ordenadores.h</label>
+        <link refid="Ordenadores.h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="70">
+        <label>C:/Users/LRona/source/repos/Sort2/Ordenadores.cpp</label>
+        <link refid="_ordenadores_8cpp"/>
+      </node>
+      <node id="71">
+        <label>C:/Users/LRona/source/repos/Sort2/Sort2.cpp</label>
+        <link refid="_sort2_8cpp"/>
+      </node>
+      <node id="69">
+        <label>C:/Users/LRona/source/repos/Sort2/Ordenadores.h</label>
+        <link refid="Ordenadores.h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_ordenadores" prot="public">Ordenadores</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_ordenadores" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_ordenadores" kindref="compound">Ordenadores</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ordenamiento<sp/>usando<sp/>quicksort</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_ordenadores_1a7edee153cc495a343f2f6c57f0c52e02" kindref="member">sort</ref>(std::vector&lt;int&gt;<sp/>&amp;arr);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>devuelve<sp/>los<sp/>valores<sp/>más altos.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="class_ordenadores_1ab026593cc0372b9932c8a021cd855be3" kindref="member">nlargest</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>devuelve<sp/>los<sp/>valores<sp/>más bajos.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="class_ordenadores_1ae5135af7744c3da6aa5c820f231692a9" kindref="member">nsmallest</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//devuelve<sp/>el<sp/>elemento<sp/>más alto</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ordenadores_1a3f6b99a31faf30f5f7cf02d730b43b07" kindref="member">topk_element</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//devuelve<sp/>el<sp/>elemento<sp/>más bajo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ordenadores_1af0da77fa1dabd2eeb75da1097096c517" kindref="member">bottomk_element</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/LRona/source/repos/Sort2/Ordenadores.h"/>
+  </compounddef>
+</doxygen>

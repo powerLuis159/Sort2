@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_quick_select" kind="class" prot="public">
+    <compoundname>QuickSelect</compoundname>
+    <basecompoundref refid="class_buscador" prot="public" virt="non-virtual">Buscador</basecompoundref>
+    <includes refid="_quick_select_8h" local="no">QuickSelect.h</includes>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_quick_select_1a47fe93c48169de01f8571853b987d04d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QuickSelect::partition</definition>
+        <argsstring>(std::vector&lt; int &gt; &amp;arr, int piv_index, bool ascendente)</argsstring>
+        <name>partition</name>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>piv_index</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ascendente</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/QuickSelect.h" line="6" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/QuickSelect.cpp" bodystart="3" bodyend="41"/>
+        <referencedby refid="class_quick_select_1a78f6058206ef2309b206949a95b8618d" compoundref="_quick_select_8cpp" startline="134" endline="161">bottomk_element</referencedby>
+        <referencedby refid="class_quick_select_1a690ec623f4d437e6547ef27bf71f4aa7" compoundref="_quick_select_8cpp" startline="43" endline="72">nlargest</referencedby>
+        <referencedby refid="class_quick_select_1a143a5c41d4763b74720a0d52904ef3c9" compoundref="_quick_select_8cpp" startline="74" endline="103">nsmallest</referencedby>
+        <referencedby refid="class_quick_select_1ac2445db976fbcf4ea683606b93592265" compoundref="_quick_select_8cpp" startline="105" endline="132">topk_element</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_quick_select_1a690ec623f4d437e6547ef27bf71f4aa7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; QuickSelect::nlargest</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)</argsstring>
+        <name>nlargest</name>
+        <reimplements refid="class_buscador_1a4bcc0d54f86dcdeb1cb8502a4f88efe7">nlargest</reimplements>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/QuickSelect.h" line="9" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/QuickSelect.cpp" bodystart="43" bodyend="72"/>
+        <references refid="class_quick_select_1a47fe93c48169de01f8571853b987d04d" compoundref="_quick_select_8cpp" startline="3" endline="41">partition</references>
+      </memberdef>
+      <memberdef kind="function" id="class_quick_select_1a143a5c41d4763b74720a0d52904ef3c9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; QuickSelect::nsmallest</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)</argsstring>
+        <name>nsmallest</name>
+        <reimplements refid="class_buscador_1abfa5713e7e6f7cbbd403c83c93fb13e4">nsmallest</reimplements>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/QuickSelect.h" line="11" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/QuickSelect.cpp" bodystart="74" bodyend="103"/>
+        <references refid="class_quick_select_1a47fe93c48169de01f8571853b987d04d" compoundref="_quick_select_8cpp" startline="3" endline="41">partition</references>
+      </memberdef>
+      <memberdef kind="function" id="class_quick_select_1ac2445db976fbcf4ea683606b93592265" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int QuickSelect::topk_element</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)</argsstring>
+        <name>topk_element</name>
+        <reimplements refid="class_buscador_1a31baa6506716269426d59c9541fecc94">topk_element</reimplements>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/QuickSelect.h" line="13" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/QuickSelect.cpp" bodystart="105" bodyend="132"/>
+        <references refid="class_quick_select_1a47fe93c48169de01f8571853b987d04d" compoundref="_quick_select_8cpp" startline="3" endline="41">partition</references>
+      </memberdef>
+      <memberdef kind="function" id="class_quick_select_1a78f6058206ef2309b206949a95b8618d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int QuickSelect::bottomk_element</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)</argsstring>
+        <name>bottomk_element</name>
+        <reimplements refid="class_buscador_1a5f867e19af5ab8fff330e3a3383102dd">bottomk_element</reimplements>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/QuickSelect.h" line="15" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/QuickSelect.cpp" bodystart="134" bodyend="161"/>
+        <references refid="class_quick_select_1a47fe93c48169de01f8571853b987d04d" compoundref="_quick_select_8cpp" startline="3" endline="41">partition</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>QuickSelect</label>
+        <link refid="class_quick_select"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Buscador</label>
+        <link refid="class_buscador"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13">
+        <label>QuickSelect</label>
+        <link refid="class_quick_select"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Buscador</label>
+        <link refid="class_buscador"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/LRona/source/repos/Sort2/QuickSelect.h" line="5" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/QuickSelect.h" bodystart="3" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_quick_select_1a78f6058206ef2309b206949a95b8618d" prot="public" virt="virtual"><scope>QuickSelect</scope><name>bottomk_element</name></member>
+      <member refid="class_quick_select_1a690ec623f4d437e6547ef27bf71f4aa7" prot="public" virt="virtual"><scope>QuickSelect</scope><name>nlargest</name></member>
+      <member refid="class_quick_select_1a143a5c41d4763b74720a0d52904ef3c9" prot="public" virt="virtual"><scope>QuickSelect</scope><name>nsmallest</name></member>
+      <member refid="class_quick_select_1a47fe93c48169de01f8571853b987d04d" prot="private" virt="non-virtual"><scope>QuickSelect</scope><name>partition</name></member>
+      <member refid="class_quick_select_1ac2445db976fbcf4ea683606b93592265" prot="public" virt="virtual"><scope>QuickSelect</scope><name>topk_element</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

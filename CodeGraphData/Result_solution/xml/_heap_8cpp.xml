@@ -1,0 +1,594 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_heap_8cpp" kind="file">
+    <compoundname>Heap.cpp</compoundname>
+    <includes refid="_heap_8h" local="yes">Heap.h</includes>
+    <incdepgraph>
+      <node id="52">
+        <label>C:/Users/LRona/source/repos/Sort2/Heap.cpp</label>
+        <link refid="Heap.cpp"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>vector</label>
+      </node>
+      <node id="53">
+        <label>Heap.h</label>
+        <link refid="_heap_8h"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>Buscador.h</label>
+        <link refid="_buscador_8h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_heap_8h" kindref="compound">Heap.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_heap_1a977500e9b3f567dbc0568901f3986502" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_heap_1a977500e9b3f567dbc0568901f3986502" kindref="member">Heap::flotar</ref>(std::vector&lt;int&gt;<sp/>&amp;arr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pos)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(pos<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>arr[(pos-1)<sp/>/<sp/>2]<sp/>&lt;<sp/>arr[pos])</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temp<sp/>=<sp/>arr[(pos-1)<sp/>/<sp/>2];</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arr[(pos-1)<sp/>/<sp/>2]<sp/>=<sp/>arr[pos];</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arr[pos]<sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>(pos-1)<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_heap_1abf85620a3bb4f89c4c612f842f760d8f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_heap_1abf85620a3bb4f89c4c612f842f760d8f" kindref="member">Heap::hundir</ref>(std::vector&lt;int&gt;&amp;<sp/>arr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pos)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>left,right;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(idx<sp/>&lt;=<sp/>(pos<sp/>-<sp/>1)<sp/>/<sp/>2)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>left<sp/>=<sp/>idx<sp/>*<sp/>2<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>right<sp/>=<sp/>idx<sp/>*<sp/>2<sp/>+<sp/>2;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(left&lt;pos<sp/>&amp;&amp;<sp/>arr[idx]<sp/>&lt;<sp/>arr[left])</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(right<sp/>&lt;<sp/>pos<sp/>&amp;&amp;<sp/>arr[left]<sp/>&lt;<sp/>arr[right])</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temp<sp/>=<sp/>arr[idx];</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arr[idx]<sp/>=<sp/>arr[right];</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arr[right]<sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idx<sp/>=<sp/>right;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temp<sp/>=<sp/>arr[idx];</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arr[idx]<sp/>=<sp/>arr[left];</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arr[left]<sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idx<sp/>=<sp/>left;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(right<sp/>&lt;<sp/>pos<sp/>&amp;&amp;<sp/>arr[idx]<sp/>&lt;<sp/>arr[right])</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temp<sp/>=<sp/>arr[idx];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arr[idx]<sp/>=<sp/>arr[right];</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arr[right]<sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idx<sp/>=<sp/>right;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="class_heap_1aec1b0e518bcfb9c465c839e12be35e99" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_heap_1aec1b0e518bcfb9c465c839e12be35e99" kindref="member">Heap::crear_heap</ref>(std::vector&lt;int&gt;<sp/>&amp;array)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tamaño 0;tamaño<array.size();tamaño++<sp/>)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flotar(array,<sp/>tamaño);
+<sp/><sp/><sp/><sp/>}
+<sp/><sp/><sp/><sp/>return;
+}
+
+void<sp/>Heap::ordenar_heap(std::vector&lt;int&gt;<sp/>&amp;array)
+{
+<sp/><sp/><sp/><sp/>for<sp/>(size_t<sp/>tamaño =<sp/>array.size()-1;<sp/>tamaño ><sp/>0;<sp/>tamaño--)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//cambiar<sp/>ultimo<sp/>por<sp/>el<sp/>primero
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>temp<sp/>=<sp/>array[0];
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[0]<sp/>=<sp/>array[tamaño];
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[tamaño] =<sp/>temp;
+
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hundir(array,<sp/>tamaño);
+<sp/><sp/><sp/><sp/>}
+<sp/><sp/><sp/><sp/>return;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nlargest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.end()<sp/>-<sp/>n,<sp/>array.end());
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nsmallest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.begin(),<sp/>array.begin()<sp/>+<sp/>n);
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+int<sp/>Heap::topk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[array.size()<sp/>-<sp/>1<sp/>-<sp/>n];
+}
+
+int<sp/>Heap::bottomk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[n];;
+}
+=0;tamaño array.size();tamaño++<sp/>)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flotar(array,<sp/>tamaño);
+<sp/><sp/><sp/><sp/>}
+<sp/><sp/><sp/><sp/>return;
+}
+
+void<sp/>Heap::ordenar_heap(std::vector&lt;int&gt;<sp/>&amp;array)
+{
+<sp/><sp/><sp/><sp/>for<sp/>(size_t<sp/>tamaño =<sp/>array.size()-1;<sp/>tamaño ><sp/>0;<sp/>tamaño--)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//cambiar<sp/>ultimo<sp/>por<sp/>el<sp/>primero
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>temp<sp/>=<sp/>array[0];
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[0]<sp/>=<sp/>array[tamaño];
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[tamaño] =<sp/>temp;
+
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hundir(array,<sp/>tamaño);
+<sp/><sp/><sp/><sp/>}
+<sp/><sp/><sp/><sp/>return;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nlargest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.end()<sp/>-<sp/>n,<sp/>array.end());
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nsmallest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.begin(),<sp/>array.begin()<sp/>+<sp/>n);
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+int<sp/>Heap::topk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[array.size()<sp/>-<sp/>1<sp/>-<sp/>n];
+}
+
+int<sp/>Heap::bottomk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[n];;
+}
+&lt;array.size();tamaño +<sp/>)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flotar(array,<sp/>tamaño);
+<sp/><sp/><sp/><sp/>}
+<sp/><sp/><sp/><sp/>return;
+}
+
+void<sp/>Heap::ordenar_heap(std::vector&lt;int&gt;<sp/>&amp;array)
+{
+<sp/><sp/><sp/><sp/>for<sp/>(size_t<sp/>tamaño =<sp/>array.size()-1;<sp/>tamaño ><sp/>0;<sp/>tamaño--)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//cambiar<sp/>ultimo<sp/>por<sp/>el<sp/>primero
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>temp<sp/>=<sp/>array[0];
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[0]<sp/>=<sp/>array[tamaño];
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[tamaño] =<sp/>temp;
+
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hundir(array,<sp/>tamaño);
+<sp/><sp/><sp/><sp/>}
+<sp/><sp/><sp/><sp/>return;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nlargest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.end()<sp/>-<sp/>n,<sp/>array.end());
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nsmallest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.begin(),<sp/>array.begin()<sp/>+<sp/>n);
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+int<sp/>Heap::topk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[array.size()<sp/>-<sp/>1<sp/>-<sp/>n];
+}
+
+int<sp/>Heap::bottomk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[n];;
+}
+++<sp/>)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_heap_1a977500e9b3f567dbc0568901f3986502" kindref="member">flotar</ref>(array,<sp/>tamaño ;
+<sp/><sp/><sp/><sp/>}
+<sp/><sp/><sp/><sp/>return;
+}
+
+void<sp/>Heap::ordenar_heap(std::vector&lt;int&gt;<sp/>&amp;array)
+{
+<sp/><sp/><sp/><sp/>for<sp/>(size_t<sp/>tamaño =<sp/>array.size()-1;<sp/>tamaño ><sp/>0;<sp/>tamaño--)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//cambiar<sp/>ultimo<sp/>por<sp/>el<sp/>primero
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>temp<sp/>=<sp/>array[0];
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[0]<sp/>=<sp/>array[tamaño];
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[tamaño] =<sp/>temp;
+
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hundir(array,<sp/>tamaño);
+<sp/><sp/><sp/><sp/>}
+<sp/><sp/><sp/><sp/>return;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nlargest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.end()<sp/>-<sp/>n,<sp/>array.end());
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nsmallest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.begin(),<sp/>array.begin()<sp/>+<sp/>n);
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+int<sp/>Heap::topk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[array.size()<sp/>-<sp/>1<sp/>-<sp/>n];
+}
+
+int<sp/>Heap::bottomk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[n];;
+}
+);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="class_heap_1a284db135c0d089605c1419b06e3a5c60" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_heap_1a284db135c0d089605c1419b06e3a5c60" kindref="member">Heap::ordenar_heap</ref>(std::vector&lt;int&gt;<sp/>&amp;array)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>tamaño =<sp/>array.size()-1;<sp/>tamaño ><sp/>0;<sp/>tamaño--)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//cambiar<sp/>ultimo<sp/>por<sp/>el<sp/>primero
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>temp<sp/>=<sp/>array[0];
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[0]<sp/>=<sp/>array[tamaño];
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[tamaño] =<sp/>temp;
+
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hundir(array,<sp/>tamaño);
+<sp/><sp/><sp/><sp/>}
+<sp/><sp/><sp/><sp/>return;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nlargest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.end()<sp/>-<sp/>n,<sp/>array.end());
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nsmallest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.begin(),<sp/>array.begin()<sp/>+<sp/>n);
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+int<sp/>Heap::topk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[array.size()<sp/>-<sp/>1<sp/>-<sp/>n];
+}
+
+int<sp/>Heap::bottomk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[n];;
+}
+<sp/>=<sp/>array.size()-1;<sp/>tamaño ><sp/>0;<sp/>tamaño--)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//cambiar<sp/>ultimo<sp/>por<sp/>el<sp/>primero
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>temp<sp/>=<sp/>array[0];
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[0]<sp/>=<sp/>array[tamaño];
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[tamaño] =<sp/>temp;
+
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hundir(array,<sp/>tamaño);
+<sp/><sp/><sp/><sp/>}
+<sp/><sp/><sp/><sp/>return;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nlargest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.end()<sp/>-<sp/>n,<sp/>array.end());
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nsmallest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.begin(),<sp/>array.begin()<sp/>+<sp/>n);
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+int<sp/>Heap::topk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[array.size()<sp/>-<sp/>1<sp/>-<sp/>n];
+}
+
+int<sp/>Heap::bottomk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[n];;
+}
+<sp/>&gt;<sp/>0;<sp/>tamaño -)
+<sp/><sp/><sp/><sp/>{
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//cambiar<sp/>ultimo<sp/>por<sp/>el<sp/>primero
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>temp<sp/>=<sp/>array[0];
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[0]<sp/>=<sp/>array[tamaño];
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[tamaño] =<sp/>temp;
+
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hundir(array,<sp/>tamaño);
+<sp/><sp/><sp/><sp/>}
+<sp/><sp/><sp/><sp/>return;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nlargest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.end()<sp/>-<sp/>n,<sp/>array.end());
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nsmallest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.begin(),<sp/>array.begin()<sp/>+<sp/>n);
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+int<sp/>Heap::topk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[array.size()<sp/>-<sp/>1<sp/>-<sp/>n];
+}
+
+int<sp/>Heap::bottomk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[n];;
+}
+--)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cambiar<sp/>ultimo<sp/>por<sp/>el<sp/>primero</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>temp<sp/>=<sp/>array[0];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[0]<sp/>=<sp/>array[tamaño ;
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[tamaño] =<sp/>temp;
+
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hundir(array,<sp/>tamaño);
+<sp/><sp/><sp/><sp/>}
+<sp/><sp/><sp/><sp/>return;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nlargest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.end()<sp/>-<sp/>n,<sp/>array.end());
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nsmallest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.begin(),<sp/>array.begin()<sp/>+<sp/>n);
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+int<sp/>Heap::topk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[array.size()<sp/>-<sp/>1<sp/>-<sp/>n];
+}
+
+int<sp/>Heap::bottomk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[n];;
+}
+];</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array[tamaño  =<sp/>temp;
+
+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hundir(array,<sp/>tamaño);
+<sp/><sp/><sp/><sp/>}
+<sp/><sp/><sp/><sp/>return;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nlargest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.end()<sp/>-<sp/>n,<sp/>array.end());
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nsmallest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.begin(),<sp/>array.begin()<sp/>+<sp/>n);
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+int<sp/>Heap::topk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[array.size()<sp/>-<sp/>1<sp/>-<sp/>n];
+}
+
+int<sp/>Heap::bottomk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[n];;
+}
+]<sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_heap_1abf85620a3bb4f89c4c612f842f760d8f" kindref="member">hundir</ref>(array,<sp/>tamaño ;
+<sp/><sp/><sp/><sp/>}
+<sp/><sp/><sp/><sp/>return;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nlargest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.end()<sp/>-<sp/>n,<sp/>array.end());
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+std::vector&lt;int&gt;<sp/>Heap::nsmallest(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;
+<sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.begin(),<sp/>array.begin()<sp/>+<sp/>n);
+<sp/><sp/><sp/><sp/>return<sp/>resultado;
+}
+
+int<sp/>Heap::topk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[array.size()<sp/>-<sp/>1<sp/>-<sp/>n];
+}
+
+int<sp/>Heap::bottomk_element(int<sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)
+{
+<sp/><sp/><sp/><sp/>crear_heap(array);
+<sp/><sp/><sp/><sp/>ordenar_heap(array);
+<sp/><sp/><sp/><sp/>return<sp/>array[n];;
+}
+);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_heap_1a31f8dab7e7ee374687b12eae78edfbd8" refkind="member"><highlight class="normal">std::vector&lt;int&gt;<sp/><ref refid="class_heap_1a31f8dab7e7ee374687b12eae78edfbd8" kindref="member">Heap::nlargest</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_heap_1aec1b0e518bcfb9c465c839e12be35e99" kindref="member">crear_heap</ref>(array);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_heap_1a284db135c0d089605c1419b06e3a5c60" kindref="member">ordenar_heap</ref>(array);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.end()<sp/>-<sp/>n,<sp/>array.end());</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>resultado;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="class_heap_1ad2c235240e7c0f12489bef3fd327dc70" refkind="member"><highlight class="normal">std::vector&lt;int&gt;<sp/><ref refid="class_heap_1ad2c235240e7c0f12489bef3fd327dc70" kindref="member">Heap::nsmallest</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_heap_1aec1b0e518bcfb9c465c839e12be35e99" kindref="member">crear_heap</ref>(array);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_heap_1a284db135c0d089605c1419b06e3a5c60" kindref="member">ordenar_heap</ref>(array);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>resultado;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>resultado.insert(resultado.end(),<sp/>array.begin(),<sp/>array.begin()<sp/>+<sp/>n);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>resultado;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="class_heap_1ae49cf24b95e038c268b53490ee5ac87e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_heap_1ae49cf24b95e038c268b53490ee5ac87e" kindref="member">Heap::topk_element</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_heap_1aec1b0e518bcfb9c465c839e12be35e99" kindref="member">crear_heap</ref>(array);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_heap_1a284db135c0d089605c1419b06e3a5c60" kindref="member">ordenar_heap</ref>(array);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>array[array.size()<sp/>-<sp/>1<sp/>-<sp/>n];</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="class_heap_1aa15d368816e4603fd840a705603c65d1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_heap_1aa15d368816e4603fd840a705603c65d1" kindref="member">Heap::bottomk_element</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_heap_1aec1b0e518bcfb9c465c839e12be35e99" kindref="member">crear_heap</ref>(array);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_heap_1a284db135c0d089605c1419b06e3a5c60" kindref="member">ordenar_heap</ref>(array);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>array[n];;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/LRona/source/repos/Sort2/Heap.cpp"/>
+  </compounddef>
+</doxygen>

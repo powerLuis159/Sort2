@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_heap" kind="class" prot="public">
+    <compoundname>Heap</compoundname>
+    <basecompoundref refid="class_buscador" prot="public" virt="non-virtual">Buscador</basecompoundref>
+    <includes refid="_heap_8h" local="no">Heap.h</includes>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_heap_1a977500e9b3f567dbc0568901f3986502" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Heap::flotar</definition>
+        <argsstring>(std::vector&lt; int &gt; &amp;arr, int pos)</argsstring>
+        <name>flotar</name>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Heap.h" line="6" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Heap.cpp" bodystart="3" bodyend="12"/>
+        <referencedby refid="class_heap_1aec1b0e518bcfb9c465c839e12be35e99" compoundref="_heap_8cpp" startline="56" endline="63">crear_heap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_heap_1abf85620a3bb4f89c4c612f842f760d8f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Heap::hundir</definition>
+        <argsstring>(std::vector&lt; int &gt; &amp;arr, int pos)</argsstring>
+        <name>hundir</name>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Heap.h" line="7" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Heap.cpp" bodystart="14" bodyend="54"/>
+        <referencedby refid="class_heap_1a284db135c0d089605c1419b06e3a5c60" compoundref="_heap_8cpp" startline="65" endline="77">ordenar_heap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_heap_1aec1b0e518bcfb9c465c839e12be35e99" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Heap::crear_heap</definition>
+        <argsstring>(std::vector&lt; int &gt; &amp;array)</argsstring>
+        <name>crear_heap</name>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Heap.h" line="8" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Heap.cpp" bodystart="56" bodyend="63"/>
+        <references refid="class_heap_1a977500e9b3f567dbc0568901f3986502" compoundref="_heap_8cpp" startline="3" endline="12">flotar</references>
+        <referencedby refid="class_heap_1aa15d368816e4603fd840a705603c65d1" compoundref="_heap_8cpp" startline="104" endline="109">bottomk_element</referencedby>
+        <referencedby refid="class_heap_1a31f8dab7e7ee374687b12eae78edfbd8" compoundref="_heap_8cpp" startline="79" endline="86">nlargest</referencedby>
+        <referencedby refid="class_heap_1ad2c235240e7c0f12489bef3fd327dc70" compoundref="_heap_8cpp" startline="88" endline="95">nsmallest</referencedby>
+        <referencedby refid="class_heap_1ae49cf24b95e038c268b53490ee5ac87e" compoundref="_heap_8cpp" startline="97" endline="102">topk_element</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_heap_1a284db135c0d089605c1419b06e3a5c60" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Heap::ordenar_heap</definition>
+        <argsstring>(std::vector&lt; int &gt; &amp;array)</argsstring>
+        <name>ordenar_heap</name>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Heap.h" line="9" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Heap.cpp" bodystart="65" bodyend="77"/>
+        <references refid="class_heap_1abf85620a3bb4f89c4c612f842f760d8f" compoundref="_heap_8cpp" startline="14" endline="54">hundir</references>
+        <referencedby refid="class_heap_1aa15d368816e4603fd840a705603c65d1" compoundref="_heap_8cpp" startline="104" endline="109">bottomk_element</referencedby>
+        <referencedby refid="class_heap_1a31f8dab7e7ee374687b12eae78edfbd8" compoundref="_heap_8cpp" startline="79" endline="86">nlargest</referencedby>
+        <referencedby refid="class_heap_1ad2c235240e7c0f12489bef3fd327dc70" compoundref="_heap_8cpp" startline="88" endline="95">nsmallest</referencedby>
+        <referencedby refid="class_heap_1ae49cf24b95e038c268b53490ee5ac87e" compoundref="_heap_8cpp" startline="97" endline="102">topk_element</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_heap_1a31f8dab7e7ee374687b12eae78edfbd8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; Heap::nlargest</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)</argsstring>
+        <name>nlargest</name>
+        <reimplements refid="class_buscador_1a4bcc0d54f86dcdeb1cb8502a4f88efe7">nlargest</reimplements>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Heap.h" line="12" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Heap.cpp" bodystart="79" bodyend="86"/>
+        <references refid="class_heap_1aec1b0e518bcfb9c465c839e12be35e99" compoundref="_heap_8cpp" startline="56" endline="63">crear_heap</references>
+        <references refid="class_heap_1a284db135c0d089605c1419b06e3a5c60" compoundref="_heap_8cpp" startline="65" endline="77">ordenar_heap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_heap_1ad2c235240e7c0f12489bef3fd327dc70" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; Heap::nsmallest</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)</argsstring>
+        <name>nsmallest</name>
+        <reimplements refid="class_buscador_1abfa5713e7e6f7cbbd403c83c93fb13e4">nsmallest</reimplements>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Heap.h" line="14" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Heap.cpp" bodystart="88" bodyend="95"/>
+        <references refid="class_heap_1aec1b0e518bcfb9c465c839e12be35e99" compoundref="_heap_8cpp" startline="56" endline="63">crear_heap</references>
+        <references refid="class_heap_1a284db135c0d089605c1419b06e3a5c60" compoundref="_heap_8cpp" startline="65" endline="77">ordenar_heap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_heap_1ae49cf24b95e038c268b53490ee5ac87e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Heap::topk_element</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)</argsstring>
+        <name>topk_element</name>
+        <reimplements refid="class_buscador_1a31baa6506716269426d59c9541fecc94">topk_element</reimplements>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Heap.h" line="16" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Heap.cpp" bodystart="97" bodyend="102"/>
+        <references refid="class_heap_1aec1b0e518bcfb9c465c839e12be35e99" compoundref="_heap_8cpp" startline="56" endline="63">crear_heap</references>
+        <references refid="class_heap_1a284db135c0d089605c1419b06e3a5c60" compoundref="_heap_8cpp" startline="65" endline="77">ordenar_heap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_heap_1aa15d368816e4603fd840a705603c65d1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Heap::bottomk_element</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)</argsstring>
+        <name>bottomk_element</name>
+        <reimplements refid="class_buscador_1a5f867e19af5ab8fff330e3a3383102dd">bottomk_element</reimplements>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Heap.h" line="18" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Heap.cpp" bodystart="104" bodyend="109"/>
+        <references refid="class_heap_1aec1b0e518bcfb9c465c839e12be35e99" compoundref="_heap_8cpp" startline="56" endline="63">crear_heap</references>
+        <references refid="class_heap_1a284db135c0d089605c1419b06e3a5c60" compoundref="_heap_8cpp" startline="65" endline="77">ordenar_heap</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>Heap</label>
+        <link refid="class_heap"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Buscador</label>
+        <link refid="class_buscador"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>Heap</label>
+        <link refid="class_heap"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Buscador</label>
+        <link refid="class_buscador"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/LRona/source/repos/Sort2/Heap.h" line="5" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Heap.h" bodystart="3" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_heap_1aa15d368816e4603fd840a705603c65d1" prot="public" virt="virtual"><scope>Heap</scope><name>bottomk_element</name></member>
+      <member refid="class_heap_1aec1b0e518bcfb9c465c839e12be35e99" prot="private" virt="non-virtual"><scope>Heap</scope><name>crear_heap</name></member>
+      <member refid="class_heap_1a977500e9b3f567dbc0568901f3986502" prot="private" virt="non-virtual"><scope>Heap</scope><name>flotar</name></member>
+      <member refid="class_heap_1abf85620a3bb4f89c4c612f842f760d8f" prot="private" virt="non-virtual"><scope>Heap</scope><name>hundir</name></member>
+      <member refid="class_heap_1a31f8dab7e7ee374687b12eae78edfbd8" prot="public" virt="virtual"><scope>Heap</scope><name>nlargest</name></member>
+      <member refid="class_heap_1ad2c235240e7c0f12489bef3fd327dc70" prot="public" virt="virtual"><scope>Heap</scope><name>nsmallest</name></member>
+      <member refid="class_heap_1a284db135c0d089605c1419b06e3a5c60" prot="private" virt="non-virtual"><scope>Heap</scope><name>ordenar_heap</name></member>
+      <member refid="class_heap_1ae49cf24b95e038c268b53490ee5ac87e" prot="public" virt="virtual"><scope>Heap</scope><name>topk_element</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="class_buscador" kind="class"><name>Buscador</name>
+    <member refid="class_buscador_1a4bcc0d54f86dcdeb1cb8502a4f88efe7" kind="function"><name>nlargest</name></member>
+    <member refid="class_buscador_1abfa5713e7e6f7cbbd403c83c93fb13e4" kind="function"><name>nsmallest</name></member>
+    <member refid="class_buscador_1a31baa6506716269426d59c9541fecc94" kind="function"><name>topk_element</name></member>
+    <member refid="class_buscador_1a5f867e19af5ab8fff330e3a3383102dd" kind="function"><name>bottomk_element</name></member>
+  </compound>
+  <compound refid="class_heap" kind="class"><name>Heap</name>
+    <member refid="class_heap_1a977500e9b3f567dbc0568901f3986502" kind="function"><name>flotar</name></member>
+    <member refid="class_heap_1abf85620a3bb4f89c4c612f842f760d8f" kind="function"><name>hundir</name></member>
+    <member refid="class_heap_1aec1b0e518bcfb9c465c839e12be35e99" kind="function"><name>crear_heap</name></member>
+    <member refid="class_heap_1a284db135c0d089605c1419b06e3a5c60" kind="function"><name>ordenar_heap</name></member>
+    <member refid="class_heap_1a31f8dab7e7ee374687b12eae78edfbd8" kind="function"><name>nlargest</name></member>
+    <member refid="class_heap_1ad2c235240e7c0f12489bef3fd327dc70" kind="function"><name>nsmallest</name></member>
+    <member refid="class_heap_1ae49cf24b95e038c268b53490ee5ac87e" kind="function"><name>topk_element</name></member>
+    <member refid="class_heap_1aa15d368816e4603fd840a705603c65d1" kind="function"><name>bottomk_element</name></member>
+  </compound>
+  <compound refid="class_ordenadores" kind="class"><name>Ordenadores</name>
+    <member refid="class_ordenadores_1a7edee153cc495a343f2f6c57f0c52e02" kind="function"><name>sort</name></member>
+    <member refid="class_ordenadores_1ab026593cc0372b9932c8a021cd855be3" kind="function"><name>nlargest</name></member>
+    <member refid="class_ordenadores_1ae5135af7744c3da6aa5c820f231692a9" kind="function"><name>nsmallest</name></member>
+    <member refid="class_ordenadores_1a3f6b99a31faf30f5f7cf02d730b43b07" kind="function"><name>topk_element</name></member>
+    <member refid="class_ordenadores_1af0da77fa1dabd2eeb75da1097096c517" kind="function"><name>bottomk_element</name></member>
+  </compound>
+  <compound refid="class_quick_select" kind="class"><name>QuickSelect</name>
+    <member refid="class_quick_select_1a47fe93c48169de01f8571853b987d04d" kind="function"><name>partition</name></member>
+    <member refid="class_quick_select_1a690ec623f4d437e6547ef27bf71f4aa7" kind="function"><name>nlargest</name></member>
+    <member refid="class_quick_select_1a143a5c41d4763b74720a0d52904ef3c9" kind="function"><name>nsmallest</name></member>
+    <member refid="class_quick_select_1ac2445db976fbcf4ea683606b93592265" kind="function"><name>topk_element</name></member>
+    <member refid="class_quick_select_1a78f6058206ef2309b206949a95b8618d" kind="function"><name>bottomk_element</name></member>
+  </compound>
+  <compound refid="class_sort" kind="class"><name>Sort</name>
+    <member refid="class_sort_1ae6622daf12943ff92ecf088c98e2ecf7" kind="function"><name>quick_sort</name></member>
+    <member refid="class_sort_1a3c9a76713be2c4008203c240e03126bd" kind="function"><name>nlargest</name></member>
+    <member refid="class_sort_1a47152de620934b6fcc156f8a195b124a" kind="function"><name>nsmallest</name></member>
+    <member refid="class_sort_1a74ca8068efaa686c51041b747c2e4a39" kind="function"><name>topk_element</name></member>
+    <member refid="class_sort_1a7f1bb6ba929faa18e9a4d7a0c401d497" kind="function"><name>bottomk_element</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_buscador_8cpp" kind="file"><name>Buscador.cpp</name>
+  </compound>
+  <compound refid="_buscador_8h" kind="file"><name>Buscador.h</name>
+  </compound>
+  <compound refid="_heap_8cpp" kind="file"><name>Heap.cpp</name>
+  </compound>
+  <compound refid="_heap_8h" kind="file"><name>Heap.h</name>
+  </compound>
+  <compound refid="_ordenadores_8cpp" kind="file"><name>Ordenadores.cpp</name>
+  </compound>
+  <compound refid="_ordenadores_8h" kind="file"><name>Ordenadores.h</name>
+  </compound>
+  <compound refid="_quick_select_8cpp" kind="file"><name>QuickSelect.cpp</name>
+  </compound>
+  <compound refid="_quick_select_8h" kind="file"><name>QuickSelect.h</name>
+  </compound>
+  <compound refid="_sort_8cpp" kind="file"><name>Sort.cpp</name>
+  </compound>
+  <compound refid="_sort_8h" kind="file"><name>Sort.h</name>
+  </compound>
+  <compound refid="_sort2_8cpp" kind="file"><name>Sort2.cpp</name>
+    <member refid="_sort2_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_347bfbfcc30c278c081dbe44c5b5908d" kind="dir"><name>C:/Users/LRona</name>
+  </compound>
+  <compound refid="dir_939e8f7d588a2978d12fe1fa1df36b02" kind="dir"><name>C:/Users/LRona/source/repos</name>
+  </compound>
+  <compound refid="dir_4465aa7cb49b813eee27cf2f3f5f7cb6" kind="dir"><name>C:/Users/LRona/source/repos/Sort2</name>
+  </compound>
+  <compound refid="dir_125178fd8c540ef629dbd6a0e8d5c9cd" kind="dir"><name>C:/Users/LRona/source</name>
+  </compound>
+  <compound refid="dir_d522931ffa1371640980b621734a4381" kind="dir"><name>C:/Users</name>
+  </compound>
+</doxygenindex>

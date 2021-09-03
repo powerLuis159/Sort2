@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_quick_select_8h" kind="file">
+    <compoundname>QuickSelect.h</compoundname>
+    <includes refid="_buscador_8h" local="yes">Buscador.h</includes>
+    <includedby refid="_quick_select_8cpp" local="yes">C:/Users/LRona/source/repos/Sort2/QuickSelect.cpp</includedby>
+    <includedby refid="_sort2_8cpp" local="yes">C:/Users/LRona/source/repos/Sort2/Sort2.cpp</includedby>
+    <incdepgraph>
+      <node id="79">
+        <label>vector</label>
+      </node>
+      <node id="77">
+        <label>C:/Users/LRona/source/repos/Sort2/QuickSelect.h</label>
+        <link refid="QuickSelect.h"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>Buscador.h</label>
+        <link refid="_buscador_8h"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="82">
+        <label>C:/Users/LRona/source/repos/Sort2/Sort2.cpp</label>
+        <link refid="_sort2_8cpp"/>
+      </node>
+      <node id="81">
+        <label>C:/Users/LRona/source/repos/Sort2/QuickSelect.cpp</label>
+        <link refid="_quick_select_8cpp"/>
+      </node>
+      <node id="80">
+        <label>C:/Users/LRona/source/repos/Sort2/QuickSelect.h</label>
+        <link refid="QuickSelect.h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_quick_select" prot="public">QuickSelect</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_buscador_8h" kindref="compound">Buscador.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_quick_select" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_quick_select" kindref="compound">QuickSelect</ref><sp/>:</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_buscador" kindref="compound">Buscador</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_quick_select_1a47fe93c48169de01f8571853b987d04d" kindref="member">partition</ref>(std::vector&lt;int&gt;<sp/>&amp;arr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>piv_index,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ascendente);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>devuelve<sp/>los<sp/>valores<sp/>más altos.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_quick_select_1a690ec623f4d437e6547ef27bf71f4aa7" kindref="member">nlargest</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>devuelve<sp/>los<sp/>valores<sp/>más bajos.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_quick_select_1a143a5c41d4763b74720a0d52904ef3c9" kindref="member">nsmallest</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//devuelve<sp/>el<sp/>elemento<sp/>más alto</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_quick_select_1ac2445db976fbcf4ea683606b93592265" kindref="member">topk_element</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//devuelve<sp/>el<sp/>elemento<sp/>más bajo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_quick_select_1a78f6058206ef2309b206949a95b8618d" kindref="member">bottomk_element</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/>std::vector&lt;int&gt;<sp/>array);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/LRona/source/repos/Sort2/QuickSelect.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_sort" kind="class" prot="public">
+    <compoundname>Sort</compoundname>
+    <basecompoundref refid="class_buscador" prot="public" virt="non-virtual">Buscador</basecompoundref>
+    <includes refid="_sort_8h" local="no">Sort.h</includes>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_sort_1ae6622daf12943ff92ecf088c98e2ecf7" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sort::quick_sort</definition>
+        <argsstring>(std::vector&lt; int &gt; &amp;arr)</argsstring>
+        <name>quick_sort</name>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Sort.h" line="7" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Sort.cpp" bodystart="3" bodyend="26"/>
+        <referencedby refid="class_sort_1a7f1bb6ba929faa18e9a4d7a0c401d497" compoundref="_sort_8cpp" startline="50" endline="54">bottomk_element</referencedby>
+        <referencedby refid="class_sort_1a3c9a76713be2c4008203c240e03126bd" compoundref="_sort_8cpp" startline="28" endline="34">nlargest</referencedby>
+        <referencedby refid="class_sort_1a47152de620934b6fcc156f8a195b124a" compoundref="_sort_8cpp" startline="36" endline="42">nsmallest</referencedby>
+        <referencedby refid="class_sort_1a74ca8068efaa686c51041b747c2e4a39" compoundref="_sort_8cpp" startline="44" endline="48">topk_element</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_sort_1a3c9a76713be2c4008203c240e03126bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; Sort::nlargest</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)</argsstring>
+        <name>nlargest</name>
+        <reimplements refid="class_buscador_1a4bcc0d54f86dcdeb1cb8502a4f88efe7">nlargest</reimplements>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Sort.h" line="10" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Sort.cpp" bodystart="28" bodyend="34"/>
+        <references refid="class_sort_1ae6622daf12943ff92ecf088c98e2ecf7" compoundref="_sort_8cpp" startline="3" endline="26">quick_sort</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sort_1a47152de620934b6fcc156f8a195b124a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; Sort::nsmallest</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)</argsstring>
+        <name>nsmallest</name>
+        <reimplements refid="class_buscador_1abfa5713e7e6f7cbbd403c83c93fb13e4">nsmallest</reimplements>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Sort.h" line="12" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Sort.cpp" bodystart="36" bodyend="42"/>
+        <references refid="class_sort_1ae6622daf12943ff92ecf088c98e2ecf7" compoundref="_sort_8cpp" startline="3" endline="26">quick_sort</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sort_1a74ca8068efaa686c51041b747c2e4a39" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Sort::topk_element</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)</argsstring>
+        <name>topk_element</name>
+        <reimplements refid="class_buscador_1a31baa6506716269426d59c9541fecc94">topk_element</reimplements>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Sort.h" line="14" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Sort.cpp" bodystart="44" bodyend="48"/>
+        <references refid="class_sort_1ae6622daf12943ff92ecf088c98e2ecf7" compoundref="_sort_8cpp" startline="3" endline="26">quick_sort</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sort_1a7f1bb6ba929faa18e9a4d7a0c401d497" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Sort::bottomk_element</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)</argsstring>
+        <name>bottomk_element</name>
+        <reimplements refid="class_buscador_1a5f867e19af5ab8fff330e3a3383102dd">bottomk_element</reimplements>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Sort.h" line="16" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Sort.cpp" bodystart="50" bodyend="54"/>
+        <references refid="class_sort_1ae6622daf12943ff92ecf088c98e2ecf7" compoundref="_sort_8cpp" startline="3" endline="26">quick_sort</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="15">
+        <label>Sort</label>
+        <link refid="class_sort"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Buscador</label>
+        <link refid="class_buscador"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="17">
+        <label>Sort</label>
+        <link refid="class_sort"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Buscador</label>
+        <link refid="class_buscador"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/LRona/source/repos/Sort2/Sort.h" line="5" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Sort.h" bodystart="3" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_sort_1a7f1bb6ba929faa18e9a4d7a0c401d497" prot="public" virt="virtual"><scope>Sort</scope><name>bottomk_element</name></member>
+      <member refid="class_sort_1a3c9a76713be2c4008203c240e03126bd" prot="public" virt="virtual"><scope>Sort</scope><name>nlargest</name></member>
+      <member refid="class_sort_1a47152de620934b6fcc156f8a195b124a" prot="public" virt="virtual"><scope>Sort</scope><name>nsmallest</name></member>
+      <member refid="class_sort_1ae6622daf12943ff92ecf088c98e2ecf7" prot="private" virt="non-virtual"><scope>Sort</scope><name>quick_sort</name></member>
+      <member refid="class_sort_1a74ca8068efaa686c51041b747c2e4a39" prot="public" virt="virtual"><scope>Sort</scope><name>topk_element</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

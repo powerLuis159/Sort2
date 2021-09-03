@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_buscador" kind="class" prot="public" abstract="yes">
+    <compoundname>Buscador</compoundname>
+    <derivedcompoundref refid="class_heap" prot="public" virt="non-virtual">Heap</derivedcompoundref>
+    <derivedcompoundref refid="class_quick_select" prot="public" virt="non-virtual">QuickSelect</derivedcompoundref>
+    <derivedcompoundref refid="class_sort" prot="public" virt="non-virtual">Sort</derivedcompoundref>
+    <includes refid="_buscador_8h" local="no">Buscador.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_buscador_1a4bcc0d54f86dcdeb1cb8502a4f88efe7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; Buscador::nlargest</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)=0</argsstring>
+        <name>nlargest</name>
+        <reimplementedby refid="class_quick_select_1a690ec623f4d437e6547ef27bf71f4aa7">nlargest</reimplementedby>
+        <reimplementedby refid="class_sort_1a3c9a76713be2c4008203c240e03126bd">nlargest</reimplementedby>
+        <reimplementedby refid="class_heap_1a31f8dab7e7ee374687b12eae78edfbd8">nlargest</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Buscador.h" line="7" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Buscador.cpp" bodystart="3" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_buscador_1abfa5713e7e6f7cbbd403c83c93fb13e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; Buscador::nsmallest</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)=0</argsstring>
+        <name>nsmallest</name>
+        <reimplementedby refid="class_quick_select_1a143a5c41d4763b74720a0d52904ef3c9">nsmallest</reimplementedby>
+        <reimplementedby refid="class_sort_1a47152de620934b6fcc156f8a195b124a">nsmallest</reimplementedby>
+        <reimplementedby refid="class_heap_1ad2c235240e7c0f12489bef3fd327dc70">nsmallest</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Buscador.h" line="9" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Buscador.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_buscador_1a31baa6506716269426d59c9541fecc94" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>int Buscador::topk_element</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)=0</argsstring>
+        <name>topk_element</name>
+        <reimplementedby refid="class_quick_select_1ac2445db976fbcf4ea683606b93592265">topk_element</reimplementedby>
+        <reimplementedby refid="class_sort_1a74ca8068efaa686c51041b747c2e4a39">topk_element</reimplementedby>
+        <reimplementedby refid="class_heap_1ae49cf24b95e038c268b53490ee5ac87e">topk_element</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Buscador.h" line="11" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Buscador.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_buscador_1a5f867e19af5ab8fff330e3a3383102dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>int Buscador::bottomk_element</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)=0</argsstring>
+        <name>bottomk_element</name>
+        <reimplementedby refid="class_quick_select_1a78f6058206ef2309b206949a95b8618d">bottomk_element</reimplementedby>
+        <reimplementedby refid="class_sort_1a7f1bb6ba929faa18e9a4d7a0c401d497">bottomk_element</reimplementedby>
+        <reimplementedby refid="class_heap_1aa15d368816e4603fd840a705603c65d1">bottomk_element</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Buscador.h" line="13" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Buscador.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Sort</label>
+        <link refid="class_sort"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QuickSelect</label>
+        <link refid="class_quick_select"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Heap</label>
+        <link refid="class_heap"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>Buscador</label>
+        <link refid="class_buscador"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/LRona/source/repos/Sort2/Buscador.h" line="4" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Buscador.h" bodystart="3" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_buscador_1a5f867e19af5ab8fff330e3a3383102dd" prot="public" virt="pure-virtual"><scope>Buscador</scope><name>bottomk_element</name></member>
+      <member refid="class_buscador_1a4bcc0d54f86dcdeb1cb8502a4f88efe7" prot="public" virt="pure-virtual"><scope>Buscador</scope><name>nlargest</name></member>
+      <member refid="class_buscador_1abfa5713e7e6f7cbbd403c83c93fb13e4" prot="public" virt="pure-virtual"><scope>Buscador</scope><name>nsmallest</name></member>
+      <member refid="class_buscador_1a31baa6506716269426d59c9541fecc94" prot="public" virt="pure-virtual"><scope>Buscador</scope><name>topk_element</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

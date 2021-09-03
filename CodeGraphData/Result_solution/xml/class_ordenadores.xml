@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_ordenadores" kind="class" prot="public">
+    <compoundname>Ordenadores</compoundname>
+    <includes refid="_ordenadores_8h" local="no">Ordenadores.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_ordenadores_1a7edee153cc495a343f2f6c57f0c52e02" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ordenadores::sort</definition>
+        <argsstring>(std::vector&lt; int &gt; &amp;arr)</argsstring>
+        <name>sort</name>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Ordenadores.h" line="7" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Ordenadores.cpp" bodystart="5" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ordenadores_1ab026593cc0372b9932c8a021cd855be3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; Ordenadores::nlargest</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)</argsstring>
+        <name>nlargest</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Ordenadores.h" line="9" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Ordenadores.cpp" bodystart="33" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ordenadores_1ae5135af7744c3da6aa5c820f231692a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; Ordenadores::nsmallest</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)</argsstring>
+        <name>nsmallest</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Ordenadores.h" line="11" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Ordenadores.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ordenadores_1a3f6b99a31faf30f5f7cf02d730b43b07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Ordenadores::topk_element</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)</argsstring>
+        <name>topk_element</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Ordenadores.h" line="13" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Ordenadores.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ordenadores_1af0da77fa1dabd2eeb75da1097096c517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Ordenadores::bottomk_element</definition>
+        <argsstring>(int n, std::vector&lt; int &gt; array)</argsstring>
+        <name>bottomk_element</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/LRona/source/repos/Sort2/Ordenadores.h" line="15" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Ordenadores.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/LRona/source/repos/Sort2/Ordenadores.h" line="4" column="1" bodyfile="C:/Users/LRona/source/repos/Sort2/Ordenadores.h" bodystart="3" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_ordenadores_1af0da77fa1dabd2eeb75da1097096c517" prot="public" virt="non-virtual"><scope>Ordenadores</scope><name>bottomk_element</name></member>
+      <member refid="class_ordenadores_1ab026593cc0372b9932c8a021cd855be3" prot="public" virt="non-virtual"><scope>Ordenadores</scope><name>nlargest</name></member>
+      <member refid="class_ordenadores_1ae5135af7744c3da6aa5c820f231692a9" prot="public" virt="non-virtual"><scope>Ordenadores</scope><name>nsmallest</name></member>
+      <member refid="class_ordenadores_1a7edee153cc495a343f2f6c57f0c52e02" prot="public" virt="non-virtual"><scope>Ordenadores</scope><name>sort</name></member>
+      <member refid="class_ordenadores_1a3f6b99a31faf30f5f7cf02d730b43b07" prot="public" virt="non-virtual"><scope>Ordenadores</scope><name>topk_element</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

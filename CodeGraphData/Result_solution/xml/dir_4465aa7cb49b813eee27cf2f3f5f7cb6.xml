@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_4465aa7cb49b813eee27cf2f3f5f7cb6" kind="dir">
+    <compoundname>C:/Users/LRona/source/repos/Sort2</compoundname>
+    <innerfile refid="_buscador_8cpp">Buscador.cpp</innerfile>
+    <innerfile refid="_buscador_8h">Buscador.h</innerfile>
+    <innerfile refid="_heap_8cpp">Heap.cpp</innerfile>
+    <innerfile refid="_heap_8h">Heap.h</innerfile>
+    <innerfile refid="_ordenadores_8cpp">Ordenadores.cpp</innerfile>
+    <innerfile refid="_ordenadores_8h">Ordenadores.h</innerfile>
+    <innerfile refid="_quick_select_8cpp">QuickSelect.cpp</innerfile>
+    <innerfile refid="_quick_select_8h">QuickSelect.h</innerfile>
+    <innerfile refid="_sort_8cpp">Sort.cpp</innerfile>
+    <innerfile refid="_sort_8h">Sort.h</innerfile>
+    <innerfile refid="_sort2_8cpp">Sort2.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/LRona/source/repos/Sort2/"/>
+  </compounddef>
+</doxygen>
